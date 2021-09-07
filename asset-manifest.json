@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/googlemapapi/static/css/main.a617e044.chunk.css",
+    "main.js": "/googlemapapi/static/js/main.9e0fcfc6.chunk.js",
+    "main.js.map": "/googlemapapi/static/js/main.9e0fcfc6.chunk.js.map",
+    "runtime-main.js": "/googlemapapi/static/js/runtime-main.a2231b48.js",
+    "runtime-main.js.map": "/googlemapapi/static/js/runtime-main.a2231b48.js.map",
+    "static/js/2.b64dd535.chunk.js": "/googlemapapi/static/js/2.b64dd535.chunk.js",
+    "static/js/2.b64dd535.chunk.js.map": "/googlemapapi/static/js/2.b64dd535.chunk.js.map",
+    "static/js/3.34f77ee5.chunk.js": "/googlemapapi/static/js/3.34f77ee5.chunk.js",
+    "static/js/3.34f77ee5.chunk.js.map": "/googlemapapi/static/js/3.34f77ee5.chunk.js.map",
+    "index.html": "/googlemapapi/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/googlemapapi/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.b64dd535.chunk.js.LICENSE.txt": "/googlemapapi/static/js/2.b64dd535.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/googlemapapi/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2231b48.js",
+    "static/js/2.b64dd535.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.9e0fcfc6.chunk.js"
+  ]
+}
