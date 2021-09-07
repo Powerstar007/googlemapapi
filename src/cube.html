@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>cubiod</title>
+    <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
+    <style>
+      #canvas{
+          width:100%;
+          height:100%;
+      }
+
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script>
+    window.addEventListener("DOMContentLoaded",function(){
+       var canvas = document.getElementById("canvas");
+       var engine = new BABYLON.Engine(canvas,true);
+       var createscene = function(){
+           var scene = new BABYLON.Scene(engine);
+           scene.clearColor = new BABYLON.Color3.White();
+           var box = BABYLON.Mesh.CreateBox("Box",4.0,scene);
+           var camera = new BABYLON.ArcRotateCamera("arcCmaera",
+               BABYLON.Tools.ToRadians(45),
+               BABYLON.Tools.ToRadians(45),
+               10.0,box.position,scene);
+           camera.attachControl(canvas,true);
+
+           var light = new BABYLON.PointLight("pointLight",new BABYLON.Vector3(0,10,0),scene);
+            light.parent = camera;
+            light.diffuse = new BABYLON.Color3(1,1,1);
+            var material = new BABYLON.StandardMaterial("material1",scene);
+            //material.diffuseColor= BABYLON.Color3.Blue();
+            material.diffuseTexture = new BABYLON.Texture("Gowtham.png",scene);
+            material.bumpTexture = new BABYLON.Texture("react-screen-capture.png",scene);
+            material.roughness = 0.5;
+           
+            box.material = material;
+           
+           return scene;
+       }
+       var scene = createscene();
+       engine.runRenderLoop(function(){
+
+        scene.render();
+       });
+    });
+</script>
+
+</body>
+</html>
